@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.section__1 {
+  border: 1px solid red;
+  position: relative;
+}
+.grid-col-3-row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    height: 60vh;
+    width: 100%;
+    grid-gap: 2rem;
+  }
+
+.section__1-image-left, .section__1-image-right {
+
+  background-size: cover;
+
+}
+.section__1-image-left {
+  grid-column: 1/span 2;
+   background-position: top;
+
+}
+
+.section_1-image-right {
+  grid-column: 3/span 1;
+}
+
+.section__1-quote {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  bottom: 0;
+  height: 60vh;
+  width: 30rem;
+  text-align: left;
+}
